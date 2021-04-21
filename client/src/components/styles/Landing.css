@@ -1,0 +1,233 @@
+.landing-header {
+    /* background-color: black; */
+    height: 95vh;
+    width: 60%;
+    float: left;
+    background-image: url(./landing-img.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 50px;
+}
+
+.landing-auth {
+    /* background-color: rgb(172, 241, 172); */
+    width: 40%;
+    /* height: 95vh; */
+    float: left;
+}
+
+.landing-content {
+    background-color: rgb(96, 18, 99);
+    height: 35vh;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20vh;
+    text-align: left;
+    padding: 20px;
+}
+
+.landing-success {
+    background-color: rgb(96, 18, 99);
+    height: 35vh;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20vh;
+    text-align: left;
+    padding: 20px;
+}
+
+.landing-success h3 {
+    color: whitesmoke;
+}
+
+.landing-success p {
+    color: whitesmoke;
+}
+
+
+.landing-footer {
+    background-color:  rgba(124, 67, 126, 0.822);
+    height: 5vh;
+    width: 100%;
+    float: left;
+}
+
+.landing-footer h5{
+    text-align: right;
+    margin-right: 30px;
+    margin-top:  15px;
+}
+
+/* landing auth */
+
+.landing-content h4 {
+    color: whitesmoke;
+}
+
+.landing-content h1 {
+    color: whitesmoke;
+}
+
+.landing-content h5 {
+    color: whitesmoke;
+}
+
+.this-link {
+    color: whitesmoke;
+}
+
+.login-btn {
+    height: 35px;
+    width: 160px;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+
+/* nav- landing */
+
+.nav-landing ul{
+    list-style: none;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.nav-landing li{
+    list-style: none;
+    float: left;
+    margin: 20px;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+/* nav-auth */
+
+.nav-auth{
+    background-color: pink ;
+    padding-top: 15vh;
+    padding-left: 25%;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.nav-auth ul{
+    list-style: none;
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.nav-auth li{
+    list-style: none;
+    float: left;
+    color: blueviolet;
+    font-weight: 900;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+}
+
+.nav-auth ul a{
+    /* display: flex; */
+    align-items: center;
+    text-decoration: none;
+    background-color: #c69ce0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+.nav-auth ul a:hover{
+    /* background-color: black; */
+    color: white;
+}
+
+/* form auth */
+
+.form-auth{
+}
+
+.form-auth label{
+    color: #ffffff;
+    margin: 10px;
+}
+
+.form-auth form input{
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-auth form p{
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.form-auth form button{
+    margin: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(238, 75, 26);
+    color: white;
+    font-weight: 800;
+}
+
+.form-auth form input:enabled, button:focus, textarea:focus, textarea:enabled, input:focus, input:enabled{
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-auth form button:enabled, button:focus, textarea:focus, textarea:enabled, input:focus, input:enabled{
+    border: 3px solid rgb(238, 75, 26);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container form{
+    padding: 1rem;
+    border-radius: 12px;
+    border: 3px solid rgba(0, 0, 240, 0.5); 
+}
+
+.form-container form textarea{
+    height: 200px;
+    width: 500px;
+}
+
+.form-container form button:enabled, button:focus, textarea:focus, textarea:enabled, input:focus, input:enabled{
+    border: 3px solid rgba(0, 0, 240, 0.5);
+}
+
+.form-container form input, button, textarea {
+    margin: .5rem;
+    padding: .5rem;
+}
+
+.posts-grid{
+    background-color: rgba(0, 0, 240, 0.5);
+    padding: 1rem;
+    display: flexbox;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.post-cointainer{
+    border-radius: 8px;
+    padding: 1rem;
+    margin: .5rem 25%;
+    border: 5px solid rgba(0, 0, 240, 0.5);
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+}

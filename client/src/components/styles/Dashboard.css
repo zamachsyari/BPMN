@@ -1,0 +1,201 @@
+.dash-header {
+    /* background-color: black; */
+    text-align: left;
+    height: 5vh;
+    width: 97%;
+    float: left;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(219, 219, 219);
+}
+
+.dash-header h3 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.dash-sidebar {
+    background-color: #322740;
+    width: 3%;
+    height: 100vh;
+    float: left;
+}
+
+.dash-sidebar ul {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+.dash-sidebar li {
+    list-style: none;
+    width: 100%;
+    /* background-color: rgb(215, 210, 219); */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.li-active {
+    background-color: #863AB5;
+}
+
+.li-option {
+    background-color: #524564;
+}
+
+.dash-navigation {
+    /* background-color: rgb(20, 44, 110); */
+    width: 20%;
+    height: 95vh;
+    float: left;
+    text-align: left;
+}
+
+.dash-navigation li {
+    list-style: none;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: rgb(219, 219, 219);
+    font-weight: 400;
+}
+
+
+.dash-content {
+    width: 77%;
+    height: 95vh;
+    float: left;
+    /* background-color: #e3d9ee6b; */
+    /* background-color: whitesmoke; */
+    
+}
+
+#main-wrapper {
+    display: grid;
+    background: url('http://testbed.nicon.nl/img/_FBs3b.svg') repeat;
+    background-size: 10px 10px;
+    /* grid-template-columns: 1fr 70% 1fr; */
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+  }
+
+
+  /* model panel */
+
+  .model-panel {
+    background-color: #524564;  
+    height: 180px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 30px;
+    float: left;
+  }
+
+  .model-panel h4 {
+      color: whitesmoke;
+      text-align: left;
+      margin-left: 15px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      
+  }
+
+  .model-panel p {
+      font-size: 13px;
+      text-align: left;
+      margin-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .model-panel-note {
+      background-color: #ffffff;
+  }
+
+  /* Profile css */
+
+  .user-photo {
+      height: 500px;
+      width: 400px;
+      background-color: aliceblue;
+      float: left;
+      margin-top: 40px;
+      margin-left: 40px;
+  }
+
+  .user-bot-photo {
+      float: left;
+      height: 200px;
+      width: 400px;
+      margin-left: 40px;
+  }
+
+  .user-right-photo {
+      float: left;
+      height: 500px;
+      width: 700px;
+      margin-top: 40px;
+      margin-left: 40px;
+      text-align: left;
+  }
+
+  /* remove button style */
+
+  .button-normal{
+    border:none;
+    background-color:transparent;
+    outline:none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .button-normal:focus{
+    border:none;
+    background-color:transparent;
+    outline:none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .input-normal:not(:focus){
+    border:none;
+    background-color:transparent;
+    outline:none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .input-normal:focus{
+    border:none;
+    background-color:transparent;
+    outline:none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  /* in diagram css */
+
+  .title-diagram{
+      position: fixed;
+      right: 20px;
+      top: 40px;
+      background-color:#524564;
+      padding: 8px 10px;
+      width: 200px;
+      text-align: left;
+      color: white;
+      font-weight: 400;
+  }
