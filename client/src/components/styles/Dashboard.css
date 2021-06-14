@@ -64,6 +64,24 @@
     font-weight: 400;
 }
 
+.dash-navigation h4 {
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: rgb(185, 185, 185);
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.dash-navigation ul{
+    margin-bottom: 50px;
+}
+
+
+
 
 .dash-content {
     width: 77%;
@@ -199,3 +217,5 @@
       color: white;
       font-weight: 400;
   }
+
+  /* template list css */

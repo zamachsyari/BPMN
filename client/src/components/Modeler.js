@@ -5,6 +5,12 @@ import 'bpmn-js/dist/assets/diagram-js.css';
 import 'bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css'
 import { emptyBpmn } from '../resources/template.jsx';
 
+// template bpmn
+import { finance01 } from '../resources/financeM01';
+import { manufacture01 } from '../resources/manufactureM01';
+import { purchasing01 } from '../resources/purchasingM01';
+import { marketing01 } from '../resources/marketingM01';
+
 // for navigation
 // import navigationModeler from '../components/EditorNavigation'
 
@@ -79,37 +85,50 @@ class Modeler extends Component {
         this.openBpmnDiagram(fileSelected);
     }
 
-    // showFile = async (e) => {
-    //     e.preventDefault()
-    //     const reader = new FileReader()
-    //     reader.onload = async (e) => { 
-    //       const text = (e.target.result)
-    //       console.log(text)
-    //       alert(text)
-
-    //     };
-    //     alert('SUKSES BRO')
-    //     reader.readAsText(e.target.files[0])
-    //   }
-
     openFileBPMN = async (e) => {
         e.preventDefault()
         const reader = new FileReader()
         reader.onload = async (e) => {
             const text = (e.target.result)
-            console.log("sukses")
-            alert("sukses")
+            // console.log("sukses")
+            alert("Sukses membuka BPMN diagram yang anda pilih.")
             this.openBpmnDiagram(text)
         };
-        alert("Loading bro")
+        alert("Loading...")
         reader.readAsText(e.target.files[0])
     }
 
+    // template function
+
+    templateFin01 = () => {
+        alert("Membuka template finance01.")
+        alert("Loading...")
+        this.openBpmnDiagram(finance01);
+    }
+    
+    templateMan01 = () => {
+        alert("Membuka template manufacture01.")
+        alert("Loading...")
+        this.openBpmnDiagram(manufacture01);
+    }
+
+    templatePur01 = () => {
+        alert("Membuka template purchasing01.")
+        alert("Loading...")
+        this.openBpmnDiagram(purchasing01);
+    }
+
+    templateMar01 = () => {
+        alert("Membuka template marketing01.")
+        alert("Loading...")
+        this.openBpmnDiagram(marketing01);
+    }
 
     render = () => {
         return(
             <div>
                 <div className="dash-navigation">
+                    <h4>Editor Menu</h4>
                     <ul>
                         <li><button onClick={this.newBpmnDiagram} className="button-normal">Create New BPMN Diagram</button></li>
                         <li><p>Open BPMN Diagram</p><input type="file" onChange={(e) => this.openFileBPMN(e)} className="input-normal"/></li>
@@ -117,6 +136,14 @@ class Modeler extends Component {
                         
                         {/* <button onClick={this.openFileSelector}>Reopen file selector</button> */}
                         {/* <pre>{JSON.stringify(filesContent)}</pre> */}
+                    </ul>
+
+                    <h4>Template</h4>
+                    <ul className="list-template">
+                        <li className="list-sub"><button onClick={this.templateFin01} className="button-normal">Finance</button></li>
+                        <li className="list-sub"><button onClick={this.templateMan01} className="button-normal">Manufacture</button></li>
+                        <li className="list-sub"><button onClick={this.templatePur01} className="button-normal">Purchasing</button></li>
+                        <li className="list-sub"><button onClick={this.templateMar01} className="button-normal">Marketing</button></li>
                     </ul>
                 </div>
                 <div className="dash-content">
